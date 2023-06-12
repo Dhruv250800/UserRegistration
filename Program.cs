@@ -40,5 +40,17 @@ public class Program
         {
             Console.WriteLine("Invalid email");
         }
+
+        // Use Case 4: Validating Mobile Number
+        string mobileNumber = Console.ReadLine();
+        MobileNumberValidator mobileNumberValidator = new MobileNumberValidator();
+        if (mobileNumberValidator.ValidateMobileNumber(mobileNumber))
+        {
+            Console.WriteLine("Valid mobile number");
+        }
+        else
+        {
+            Console.WriteLine("Invalid mobile number");
+        }
     }
 }
