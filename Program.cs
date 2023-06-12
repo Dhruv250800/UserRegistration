@@ -28,5 +28,17 @@ public class Program
         {
             Console.WriteLine("Invalid last name");
         }
+
+        // Use Case 3: Validating Email
+        string email = Console.ReadLine();
+        EmailValidator emailValidator = new EmailValidator();
+        if (emailValidator.ValidateEmail(email))
+        {
+            Console.WriteLine("Valid email");
+        }
+        else
+        {
+            Console.WriteLine("Invalid email");
+        }
     }
 }
