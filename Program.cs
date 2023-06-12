@@ -89,6 +89,18 @@ public class Program
             Console.WriteLine("Invalid password - Rule 3 failed");
         }
 
+        // Use Case 8: Validating Rule 4 - Password Has Exactly 1 Special Character
+        string passwordForRule4 = Console.ReadLine();
+        PasswordRule4Validator rule4Validator = new PasswordRule4Validator();
+        if (rule4Validator.ValidateRule4(passwordForRule4))
+        {
+            Console.WriteLine("Valid password - Rule 4 passed");
+        }
+        else
+        {
+            Console.WriteLine("Invalid password - Rule 4 failed");
+        }
+
 
     }
 }
