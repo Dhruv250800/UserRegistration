@@ -101,6 +101,16 @@ public class Program
             Console.WriteLine("Invalid password - Rule 4 failed");
         }
 
-
+        // Use Case 9: Validating Email Samples Separately
+        string emailSample = Console.ReadLine();
+        EmailSampleValidator emailSampleValidator = new EmailSampleValidator();
+        if (emailSampleValidator.ValidateEmailSample(emailSample))
+        {
+            Console.WriteLine("Valid email sample");
+        }
+        else
+        {
+            Console.WriteLine("Invalid email sample");
+        }
     }
 }
