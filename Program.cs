@@ -77,6 +77,18 @@ public class Program
             Console.WriteLine("Invalid password - Rule 2 failed");
         }
 
+        // Use Case 7: Validating Rule 3 - Password Should Have at Least 1 Numeric Number
+        string passwordForRule3 = Console.ReadLine();
+        PasswordRule3Validator rule3Validator = new PasswordRule3Validator();
+        if (rule3Validator.ValidateRule3(passwordForRule3))
+        {
+            Console.WriteLine("Valid password - Rule 3 passed");
+        }
+        else
+        {
+            Console.WriteLine("Invalid password - Rule 3 failed");
+        }
+
 
     }
 }
