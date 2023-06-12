@@ -65,6 +65,18 @@ public class Program
             Console.WriteLine("Invalid password");
         }
 
+        // Use Case 6: Validating Rule 2 - Password Should Have at Least 1 Upper Case
+        string passwordForRule2 = Console.ReadLine();
+        PasswordRule2Validator rule2Validator = new PasswordRule2Validator();
+        if (rule2Validator.ValidateRule2(passwordForRule2))
+        {
+            Console.WriteLine("Valid password - Rule 2 passed");
+        }
+        else
+        {
+            Console.WriteLine("Invalid password - Rule 2 failed");
+        }
+
 
     }
 }
