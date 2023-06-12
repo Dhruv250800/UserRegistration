@@ -16,5 +16,17 @@ public class Program
         {
             Console.WriteLine("Invalid first name");
         }
+
+        // Use Case 2: Validating Last Name
+        string lastName = Console.ReadLine();
+        LastNameValidator lastNameValidator = new LastNameValidator();
+        if (lastNameValidator.ValidateLastName(lastName))
+        {
+            Console.WriteLine("Valid last name");
+        }
+        else
+        {
+            Console.WriteLine("Invalid last name");
+        }
     }
 }
