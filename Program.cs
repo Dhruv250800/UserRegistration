@@ -52,5 +52,19 @@ public class Program
         {
             Console.WriteLine("Invalid mobile number");
         }
+
+        // Use Case 5: Validating Password (with rules)
+        string password = Console.ReadLine();
+        PasswordValidator passwordValidator = new PasswordValidator();
+        if (passwordValidator.ValidatePassword(password))
+        {
+            Console.WriteLine("Valid password");
+        }
+        else
+        {
+            Console.WriteLine("Invalid password");
+        }
+
+
     }
 }
